@@ -60,8 +60,7 @@ module tb_eu_reg_alu_memory ();
         i_and_i[3] = {1'b1, 5'b00000, 1'b0, 1'b0 ,2'b00, 1'b1, 2'b00, 3'b001 ,16'h02}; //  MOV AH, 0x02
         i_and_i[4] = {16'b0, 6'b010000, 1'b0, 1'b1, 2'b01, 3'b001 , 3'b000}; // ADD AX, BX -> AX = AX + BX
         i_and_i[5] = {16'b0, 6'b010000, 1'b0, 1'b0, 2'b01, 3'b001 , 3'b000}; // ADD AL, AH -> AL = AL + AH
-        // instruction_and_imm[4] = {1'b1, 5'b00000, 1'b0, 1'b0 ,2'b00, 1'b1, 2'b00, 3'b010 ,16'h06}; //  MOV BL, 0x06
-        i_and_i[6] = {16'b0, 6'b001010, 1'b0, 1'b0, 2'b01, 3'b000 , 3'b001}; // ADD AH, AL -> AH = AH + AL
+        i_and_i[6] = {16'b0, 6'b000010, 1'b0, 1'b1, 2'b01, 3'b001 , 3'b000}; // OR AL, AH -> AL = AL OR AH
         /*
         1000000000100000 (0)
         1000000100100000 (1)
