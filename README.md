@@ -50,6 +50,13 @@ Getting Started:
  
   	•	Run the test.vvp (compile from the file PrototypeVer2_2.v)
   
+Statistical Testing Result (Need to be use with Consideration)
+
+	+ 	Total Instruction was Fed (26 instructions) - include NOP
+ 
+	+	Total simulation time: 170 ns
+ 
+	+	The CPI (Cycles Per Instruction) = 6.6  (about 7 cycle/ instruction)
 
 Contribution:
 
