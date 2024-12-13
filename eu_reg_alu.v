@@ -154,7 +154,6 @@ module eu_reg_alu (
                 $display("At time %t, Register_select %b", $time,r_or_m);
                 acess_index = ((j -4) % 4) +1;
                 $display("At time %t, Cast the value: %h, access position: %d ", $time,temporary_const[acess_index], acess_index);
-                $display("At time %t, Cast the value: %h, access position: %d ", $time,temporary_const[acess_index+1], acess_index+1);
                 data_in <= temporary_const[acess_index];
                 r_or_m_reg <= r_or_m;
                 #1;
